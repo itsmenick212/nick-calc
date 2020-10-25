@@ -4,7 +4,7 @@
   "description": "Nick's Real Time calculator web app",
   "main": "nick-calc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "nodemon ./nick-calc.js
   },
   "repository": {
     "type": "git",
