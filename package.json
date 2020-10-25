@@ -1,14 +1,14 @@
 {
   "name": "nick-calculator",
   "version": "1.0.0",
-  "description": "Nick's Real Time calculator web app",
+  "description": "Nicks Real Time calculator web app",
   "main": "nick-calc.js",
   "scripts": {
-	"start": "node ./nick-calc.js
+    "start": "nodemon ./nick-calc.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/itsmenick212/nick-calc.git"
+    "url": "nick-calc"
   },
   "author": "Nick Gupta",
   "license": "ISC",
