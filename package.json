@@ -4,7 +4,7 @@
   "description": "Nick's Real Time calculator web app",
   "main": "nick-calc.js",
   "scripts": {
-	"start": "nodemon ./nick-calc.js
+	"start": "node ./nick-calc.js
   },
   "repository": {
     "type": "git",
