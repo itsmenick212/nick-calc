@@ -5,14 +5,14 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #ACE7FF;
 }
 
 #header {
-  color: #3b2a59;
-  font-family: "Comfortaa";
-  font-weight: 700;
-  margin-top: 5px;
+  color: #0075A3;
+  font-family: "Staatliches";
+  font-weight: 800;
+  margin-top: 8px;
 }
 
 .table tr > td {
@@ -28,6 +28,6 @@ a {
 }
 
 img {
-  height: 3em;
-  padding-right: 1em;
+  height: 9em;
+  padding-right: 10em;
 }
