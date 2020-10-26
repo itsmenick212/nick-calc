@@ -1,6 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var moment = require('moment');
 
 var indexRouter = require('./routes/index');
 var app = express();
@@ -15,9 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 var computationCache = [];
-var calculator = require('./calc.js')(io, computationCache);
+var calc = require('./calc.js')(io, computationCache);
 
-// Add cached calculations to every page render response
 app.use('/', function(req, res, next) {
   res.cache = computationCache;
   next();
@@ -25,22 +25,18 @@ app.use('/', function(req, res, next) {
 
 app.use('/', indexRouter);
 
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   
-  // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
 
-http.listen(process.env.PORT || 8080, () => {
-  console.log('listening on *:' + process.env.PORT || 8080);
+http.listen(process.env.port || 8080, () => {
+  console.log('listening on *:' + process.env.port || 8080);
 });
