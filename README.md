@@ -7,6 +7,8 @@ Since AWS uses port # 8080, that's the port number assigned to this app's server
 You access this app by visiting AWS url: 
 http://nick-calc.us-east-1.elasticbeanstalk.com/
 
+If for any reason, the AWS link does not work, please try the second method below and try the AWS link in about 10 minutes again while keeping the npm start running.
+
 A second (optional) way to access this app is by entering "npm install" and then "npm start" in CLI and then going to "localhost:8080" in your browser.
 
 The GitHub repository link is https://github.com/itsmenick212/nick-calc
