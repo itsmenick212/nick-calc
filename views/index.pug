@@ -3,12 +3,12 @@ extends layout
 block content
   div.container-fluid
     div.row#heading
-      img.float-left(img src="https://media.sezzle.com/branding/2.0/Sezzle_Logo_FullColor.svg")
-      h1#header  Calculator
+      img.float-left(img src="https://i.ibb.co/KjKZnJK/nick-columbia-lion.jpg")
+      h1#header  Nick's Calculator
     div#calculations
       form.row.form-group#calculations_input_form      
         input.col.form-control(type='text' id='user_input')
-        button.col-1-md.btn.btn-primary(type='submit') Calculate!
+        button.col-1-md.btn.btn-primary(type='submit') Enter
       table.table#calculations_output_table
         each calc in cache.reverse()
           tr.row
